@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="1080" viewBox="0 0 1480 1080" role="img" aria-labelledby="title desc">
+  <title id="title">AI Agent Evolving landscape</title>
+  <desc id="desc">A vendor comparison from foundation models to general work agents.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#071331"/>
+      <stop offset="55%" stop-color="#06152a"/>
+      <stop offset="100%" stop-color="#170a30"/>
+    </linearGradient>
+    <linearGradient id="titleGradient" x1="0" x2="1">
+      <stop offset="0%" stop-color="#00a4ff"/>
+      <stop offset="50%" stop-color="#8b6cff"/>
+      <stop offset="100%" stop-color="#f451d8"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="18"/></filter>
+    <style>
+      .h { font-family: Inter, Arial, sans-serif; font-weight: 700; fill: #f7fbff; }
+      .b { font-family: Inter, Arial, sans-serif; fill: #d8e5f7; }
+      .sub { font-family: Inter, Arial, sans-serif; fill: #9dafc7; }
+      .line { stroke: #45617c; stroke-opacity: .72; }
+    </style>
+  </defs>
+  <rect width="1480" height="1080" fill="url(#bg)"/>
+  <circle cx="180" cy="200" r="180" fill="#1648b9" opacity=".18" filter="url(#glow)"/>
+  <circle cx="1300" cy="230" r="200" fill="#a527af" opacity=".15" filter="url(#glow)"/>
+  <text x="740" y="86" text-anchor="middle" class="h" font-size="68" fill="url(#titleGradient)" style="fill:url(#titleGradient)">AI Agent Evolving</text>
+  <text x="740" y="132" text-anchor="middle" class="b" font-size="24">From <tspan fill="#15b7ff">chat</tspan> to <tspan fill="#29e4b8">creation</tspan>, from <tspan fill="#ffb01c">code</tspan> to <tspan fill="#fa60d9">completion</tspan>.</text>
+
+  <g transform="translate(300 170)">
+    <g transform="translate(0 0)"><rect width="270" height="92" rx="18" fill="#163b85" stroke="#4b86ea"/><text x="135" y="39" text-anchor="middle" class="h" font-size="21">Foundation Model</text><text x="135" y="68" text-anchor="middle" class="sub" font-size="16">The intelligence</text></g>
+    <g transform="translate(285 0)"><rect width="270" height="92" rx="18" fill="#0c4974" stroke="#39a7d8"/><text x="135" y="39" text-anchor="middle" class="h" font-size="21">AI Assistant</text><text x="135" y="68" text-anchor="middle" class="sub" font-size="16">Talk to AI</text></g>
+    <g transform="translate(570 0)"><rect width="270" height="92" rx="18" fill="#754215" stroke="#e99b31"/><text x="135" y="39" text-anchor="middle" class="h" font-size="21">Developer Agent</text><text x="135" y="68" text-anchor="middle" class="sub" font-size="16">Engineer with AI</text></g>
+    <g transform="translate(855 0)"><rect width="270" height="92" rx="18" fill="#6e225e" stroke="#eb55c7"/><text x="135" y="39" text-anchor="middle" class="h" font-size="21">General Work Agent</text><text x="135" y="68" text-anchor="middle" class="sub" font-size="16">Get work done with AI</text></g>
+  </g>
+
+  <g transform="translate(20 300)">
+    <rect width="1440" height="126" rx="16" fill="#071a34" stroke="#8f4cff" stroke-width="2"/>
+    <line x1="280" y1="0" x2="280" y2="126" class="line"/><line x1="565" y1="0" x2="565" y2="126" class="line"/><line x1="850" y1="0" x2="850" y2="126" class="line"/><line x1="1135" y1="0" x2="1135" y2="126" class="line"/>
+    <text x="30" y="53" class="h" font-size="28">OpenAI</text><text x="30" y="85" class="sub" font-size="16">Broad intelligence &amp; tools</text>
+    <text x="310" y="50" class="h" font-size="25">GPT</text><text x="310" y="82" class="sub" font-size="16">GPT-5.6 family</text>
+    <text x="595" y="50" class="h" font-size="25">ChatGPT</text><text x="595" y="82" class="sub" font-size="16">AI assistant</text>
+    <text x="880" y="50" class="h" font-size="25">Codex</text><text x="880" y="82" class="sub" font-size="16">Developer agent for software</text>
+    <text x="1165" y="50" class="h" font-size="25">ChatGPT Work</text><text x="1165" y="82" class="sub" font-size="16">Longer tasks &amp; deliverables</text>
+  </g>
+
+  <g transform="translate(20 436)">
+    <rect width="1440" height="126" rx="16" fill="#0b1a34" stroke="#f09644" stroke-width="2"/>
+    <line x1="280" y1="0" x2="280" y2="126" class="line"/><line x1="565" y1="0" x2="565" y2="126" class="line"/><line x1="850" y1="0" x2="850" y2="126" class="line"/><line x1="1135" y1="0" x2="1135" y2="126" class="line"/>
+    <text x="30" y="53" class="h" font-size="28">Anthropic</text><text x="30" y="85" class="sub" font-size="16">Safety &amp; agent harness leader</text>
+    <text x="310" y="50" class="h" font-size="25">Claude</text><text x="310" y="82" class="sub" font-size="16">Claude 4 family</text>
+    <text x="595" y="50" class="h" font-size="25">Claude</text><text x="595" y="82" class="sub" font-size="16">AI assistant</text>
+    <text x="880" y="50" class="h" font-size="25">Claude Code</text><text x="880" y="82" class="sub" font-size="16">Developer agent for codebases</text>
+    <text x="1165" y="50" class="h" font-size="25">Claude Cowork</text><text x="1165" y="82" class="sub" font-size="16">Work agent for teams &amp; projects</text>
+  </g>
+
+  <g transform="translate(20 572)">
+    <rect width="1440" height="126" rx="16" fill="#061c38" stroke="#377ef1" stroke-width="2"/>
+    <line x1="280" y1="0" x2="280" y2="126" class="line"/><line x1="565" y1="0" x2="565" y2="126" class="line"/><line x1="850" y1="0" x2="850" y2="126" class="line"/><line x1="1135" y1="0" x2="1135" y2="126" class="line"/>
+    <text x="30" y="53" class="h" font-size="28">Google</text><text x="30" y="85" class="sub" font-size="16">AI + data + cloud advantage</text>
+    <text x="310" y="50" class="h" font-size="25">Gemini</text><text x="310" y="82" class="sub" font-size="16">Gemini 2.5 family</text>
+    <text x="595" y="50" class="h" font-size="25">Gemini + Search</text><text x="595" y="82" class="sub" font-size="16">Assistant with real-time search</text>
+    <text x="880" y="50" class="h" font-size="25">Antigravity</text><text x="880" y="82" class="sub" font-size="16">Developer agent platform</text>
+    <text x="1165" y="50" class="h" font-size="25">Gemini Spark</text><text x="1165" y="82" class="sub" font-size="16">General work agent, 24/7 execution</text>
+  </g>
+
+  <g transform="translate(20 708)">
+    <rect width="1440" height="126" rx="16" fill="#071d31" stroke="#38bfc0" stroke-width="2"/>
+    <line x1="280" y1="0" x2="280" y2="126" class="line"/><line x1="565" y1="0" x2="565" y2="126" class="line"/><line x1="850" y1="0" x2="850" y2="126" class="line"/><line x1="1135" y1="0" x2="1135" y2="126" class="line"/>
+    <text x="30" y="53" class="h" font-size="28">xAI</text><text x="30" y="85" class="sub" font-size="16">Built for the era of agents</text>
+    <text x="310" y="50" class="h" font-size="25">Grok</text><text x="310" y="82" class="sub" font-size="16">Grok 3 family</text>
+    <text x="595" y="50" class="h" font-size="25">Grok</text><text x="595" y="82" class="sub" font-size="16">AI assistant</text>
+    <text x="880" y="50" class="h" font-size="25">Grok Build</text><text x="880" y="82" class="sub" font-size="16">Developer agent for complex builds</text>
+    <text x="1165" y="50" class="h" font-size="25">Grok Bot</text><text x="1165" y="82" class="sub" font-size="16">Autonomous agent with its own computer</text>
+  </g>
+
+  <g transform="translate(20 844)">
+    <rect width="1440" height="126" rx="16" fill="#081d2d" stroke="#48c656" stroke-width="2"/>
+    <line x1="280" y1="0" x2="280" y2="126" class="line"/><line x1="565" y1="0" x2="565" y2="126" class="line"/><line x1="850" y1="0" x2="850" y2="126" class="line"/><line x1="1135" y1="0" x2="1135" y2="126" class="line"/>
+    <text x="30" y="53" class="h" font-size="28">Open Source</text><text x="30" y="85" class="sub" font-size="16">Open models, open freedom</text>
+    <text x="310" y="50" class="h" font-size="25">DeepSeek</text><text x="310" y="82" class="sub" font-size="16">DeepSeek R1 family</text>
+    <text x="595" y="50" class="h" font-size="25">Open WebUI</text><text x="595" y="82" class="sub" font-size="16">Open-source AI interface</text>
+    <text x="880" y="50" class="h" font-size="25">OpenHands</text><text x="880" y="82" class="sub" font-size="16">Open-source developer agent</text>
+    <text x="1165" y="50" class="h" font-size="25">OpenClaw</text><text x="1165" y="82" class="sub" font-size="16">Open-source general work agent</text>
+  </g>
+  <text x="740" y="1033" text-anchor="middle" class="b" font-size="25">Different companies. Same mission. <tspan fill="#f05bdb">Turn intelligence into action.</tspan></text>
+</svg>
