@@ -1,461 +1,197 @@
-version: 0.1.0
-title: Awesome AI Agent Landscape
+version: 1.0.0
+title: AI Agent Evolving
 updated: 2026-08-25
-description: >-
-  Vendor-first map of the systems used to build, run, connect,
-  evaluate, and deploy AI agents.
+purpose: >-
+  A living product map showing how major AI ecosystems evolve from
+  foundation models through assistants and developer agents to general work agents.
 
-layers:
-  - id: platforms
-    name: Agent platforms
-    definition: Managed or model-native foundations for building and operating agents.
-  - id: coding-harnesses
-    name: Coding agents & harnesses
-    definition: Agentic environments that plan, edit, execute, and verify work in a codebase.
-  - id: frameworks
-    name: Frameworks & orchestration
-    definition: Code frameworks for agent state, tool use, retrieval, routing, and workflows.
-  - id: runtimes
-    name: Runtimes & tool execution
-    definition: Sandboxes, browsers, containers, and environments that let agents act safely.
-  - id: protocols
-    name: Protocols & interoperability
-    definition: Open interfaces that connect agents, tools, and interactive frontends.
-  - id: evaluation
-    name: Evaluation & observability
-    definition: Tracing, testing, scoring, and production quality controls for agents.
-  - id: visual-builders
-    name: Visual & low-code builders
-    definition: Visual surfaces for assembling and deploying agentic workflows.
-  - id: benchmarks
-    name: Benchmarks & research environments
-    definition: Standard tasks and environments used to compare agent performance.
+stages:
+  - id: foundation-model
+    name: Foundation Model
+    tagline: The intelligence
+    definition: The model family that supplies the underlying capability.
+  - id: ai-assistant
+    name: AI Assistant
+    tagline: Talk to AI
+    definition: An interactive product primarily driven by a user conversation.
+  - id: developer-agent
+    name: Developer Agent
+    tagline: Engineer with AI
+    definition: An agent designed to work across a software project using tools and execution.
+  - id: general-work-agent
+    name: General Work Agent
+    tagline: Get work done with AI
+    definition: An agent designed to own longer-running, cross-application work and deliverables.
+
+ecosystems:
+  - id: openai
+    name: OpenAI
+    positioning: Broad general intelligence and leading developer tools
+    color: "#8b5cf6"
+  - id: anthropic
+    name: Anthropic
+    positioning: AI safety pioneers and agent-harness leaders
+    color: "#f59e0b"
+  - id: google
+    name: Google
+    positioning: AI, data, and cloud advantage
+    color: "#4285f4"
+  - id: xai
+    name: xAI
+    positioning: Built for the era of agents
+    color: "#22b8c7"
+  - id: open-source
+    name: Open Source
+    positioning: Open models, open freedom
+    color: "#41c656"
 
 entries:
-  - id: openai-agents-sdk
-    name: OpenAI Agents SDK
-    layer: platforms
-    organization: OpenAI
-    url: https://github.com/openai/openai-agents-python
-    open_source: true
-    tags: [handoffs, tools, tracing]
-  - id: claude-agent-sdk
-    name: Anthropic Claude Agent SDK
-    layer: platforms
-    organization: Anthropic
-    url: https://docs.anthropic.com/en/docs/claude-code/sdk
-    open_source: partial
-    tags: [claude, coding-agents]
-  - id: google-adk
-    name: Google Agent Development Kit
-    layer: platforms
-    organization: Google
-    url: https://github.com/google/adk-python
-    open_source: true
-    tags: [gemini, multi-agent]
-  - id: azure-ai-foundry-agents
-    name: Azure AI Foundry Agent Service
-    layer: platforms
-    organization: Microsoft
-    url: https://learn.microsoft.com/azure/ai-foundry/agents/
-    open_source: false
-    tags: [azure, enterprise]
-  - id: amazon-bedrock-agents
-    name: Amazon Bedrock Agents
-    layer: platforms
-    organization: AWS
-    url: https://aws.amazon.com/bedrock/agents/
-    open_source: false
-    tags: [aws, enterprise]
-  - id: nemo-agent-toolkit
-    name: NVIDIA NeMo Agent Toolkit
-    layer: platforms
-    organization: NVIDIA
-    url: https://github.com/NVIDIA/NeMo-Agent-Toolkit
-    open_source: true
-    tags: [enterprise, optimization]
-  - id: watsonx-orchestrate
-    name: IBM watsonx Orchestrate
-    layer: platforms
-    organization: IBM
-    url: https://www.ibm.com/products/watsonx-orchestrate
-    open_source: false
-    tags: [enterprise, business-automation]
+  - id: openai-gpt
+    ecosystem: openai
+    stage: foundation-model
+    product: GPT
+    family: GPT-5.6 family
+    status: active
+    source: https://openai.com/
+    note: General intelligence model family.
+  - id: openai-chatgpt
+    ecosystem: openai
+    stage: ai-assistant
+    product: ChatGPT
+    status: active
+    source: https://chatgpt.com/
+    note: Interactive AI assistant.
+  - id: openai-codex
+    ecosystem: openai
+    stage: developer-agent
+    product: Codex
+    status: active
+    source: https://openai.com/codex/
+    note: Developer agent for software work.
+  - id: openai-chatgpt-work
+    ecosystem: openai
+    stage: general-work-agent
+    product: ChatGPT Work
+    status: active
+    source: https://chatgpt.com/
+    note: General work agent for longer tasks and deliverables.
 
-  - id: codex-cli
-    name: Codex CLI
-    layer: coding-harnesses
-    organization: OpenAI
-    url: https://github.com/openai/codex
-    open_source: true
-    tags: [terminal, coding]
-  - id: claude-code
-    name: Claude Code
-    layer: coding-harnesses
-    organization: Anthropic
-    url: https://docs.anthropic.com/en/docs/claude-code/overview
-    open_source: false
-    tags: [terminal, ide, coding]
-  - id: gemini-cli
-    name: Gemini CLI
-    layer: coding-harnesses
-    organization: Google
-    url: https://github.com/google-gemini/gemini-cli
-    open_source: true
-    tags: [terminal, coding]
-  - id: opencode
-    name: OpenCode
-    layer: coding-harnesses
-    organization: Anomaly
-    url: https://github.com/anomalyco/opencode
-    open_source: true
-    tags: [terminal, multi-model]
-  - id: cline
-    name: Cline
-    layer: coding-harnesses
-    organization: Cline
-    url: https://github.com/cline/cline
-    open_source: true
-    tags: [vscode, coding]
-  - id: aider
-    name: Aider
-    layer: coding-harnesses
-    organization: Aider
-    url: https://github.com/Aider-AI/aider
-    open_source: true
-    tags: [terminal, git, multi-model]
-  - id: continue
-    name: Continue
-    layer: coding-harnesses
-    organization: Continue
-    url: https://github.com/continuedev/continue
-    open_source: true
-    tags: [ide, coding]
-  - id: swe-agent
-    name: SWE-agent
-    layer: coding-harnesses
-    organization: Princeton NLP
-    url: https://github.com/SWE-agent/SWE-agent
-    open_source: true
-    tags: [software-engineering, research]
+  - id: anthropic-claude-model
+    ecosystem: anthropic
+    stage: foundation-model
+    product: Claude
+    family: Claude 4 family
+    status: active
+    source: https://www.anthropic.com/claude
+    note: Frontier model family.
+  - id: anthropic-claude
+    ecosystem: anthropic
+    stage: ai-assistant
+    product: Claude
+    status: active
+    source: https://claude.ai/
+    note: Interactive AI assistant.
+  - id: anthropic-claude-code
+    ecosystem: anthropic
+    stage: developer-agent
+    product: Claude Code
+    status: active
+    source: https://docs.anthropic.com/en/docs/claude-code/overview
+    note: Developer agent for codebases.
+  - id: anthropic-claude-cowork
+    ecosystem: anthropic
+    stage: general-work-agent
+    product: Claude Cowork
+    status: active
+    source: https://claude.ai/
+    note: General work agent for teams and projects.
 
-  - id: langgraph
-    name: LangGraph
-    layer: frameworks
-    organization: LangChain
-    url: https://github.com/langchain-ai/langgraph
-    open_source: true
-    tags: [stateful, graphs, durable-execution]
-  - id: langchain
-    name: LangChain
-    layer: frameworks
-    organization: LangChain
-    url: https://github.com/langchain-ai/langchain
-    open_source: true
-    tags: [integrations, tools]
-  - id: llamaindex
-    name: LlamaIndex
-    layer: frameworks
-    organization: LlamaIndex
-    url: https://github.com/run-llama/llama_index
-    open_source: true
-    tags: [rag, data]
-  - id: pydanticai
-    name: PydanticAI
-    layer: frameworks
-    organization: Pydantic
-    url: https://github.com/pydantic/pydantic-ai
-    open_source: true
-    tags: [python, type-safety]
-  - id: crewai
-    name: CrewAI
-    layer: frameworks
-    organization: CrewAI
-    url: https://github.com/crewAIInc/crewAI
-    open_source: true
-    tags: [multi-agent, roles]
-  - id: autogen
-    name: Microsoft AutoGen
-    layer: frameworks
-    organization: Microsoft
-    url: https://github.com/microsoft/autogen
-    open_source: true
-    tags: [multi-agent, dotnet]
-  - id: semantic-kernel
-    name: Semantic Kernel
-    layer: frameworks
-    organization: Microsoft
-    url: https://github.com/microsoft/semantic-kernel
-    open_source: true
-    tags: [enterprise, dotnet]
-  - id: agno
-    name: Agno
-    layer: frameworks
-    organization: Agno
-    url: https://github.com/agno-agi/agno
-    open_source: true
-    tags: [python, lightweight]
-  - id: mastra
-    name: Mastra
-    layer: frameworks
-    organization: Mastra
-    url: https://github.com/mastra-ai/mastra
-    open_source: true
-    tags: [typescript, full-stack]
-  - id: smolagents
-    name: Hugging Face smolagents
-    layer: frameworks
-    organization: Hugging Face
-    url: https://github.com/huggingface/smolagents
-    open_source: true
-    tags: [python, code-first]
-  - id: haystack
-    name: Haystack
-    layer: frameworks
-    organization: deepset
-    url: https://github.com/deepset-ai/haystack
-    open_source: true
-    tags: [rag, search]
+  - id: google-gemini-model
+    ecosystem: google
+    stage: foundation-model
+    product: Gemini
+    family: Gemini 2.5 family
+    status: active
+    source: https://gemini.google.com/
+    note: Google model family.
+  - id: google-gemini-search
+    ecosystem: google
+    stage: ai-assistant
+    product: Gemini + Search
+    status: active
+    source: https://gemini.google.com/
+    note: AI assistant with real-time search.
+  - id: google-antigravity
+    ecosystem: google
+    stage: developer-agent
+    product: Antigravity
+    status: tracking
+    source: null
+    note: Developer agent platform tracked pending a stable primary source.
+  - id: google-gemini-spark
+    ecosystem: google
+    stage: general-work-agent
+    product: Gemini Spark
+    status: tracking
+    source: null
+    note: General work agent position tracked pending a stable primary source.
 
-  - id: browser-use
-    name: Browser Use
-    layer: runtimes
-    organization: Browser Use
-    url: https://github.com/browser-use/browser-use
-    open_source: true
-    tags: [browser, computer-use]
-  - id: playwright
-    name: Playwright
-    layer: runtimes
-    organization: Microsoft
-    url: https://github.com/microsoft/playwright
-    open_source: true
-    tags: [browser, automation]
-  - id: e2b
-    name: E2B
-    layer: runtimes
-    organization: E2B
-    url: https://github.com/e2b-dev/E2B
-    open_source: true
-    tags: [sandbox, code-execution]
-  - id: daytona
-    name: Daytona
-    layer: runtimes
-    organization: Daytona
-    url: https://github.com/daytonaio/daytona
-    open_source: true
-    tags: [workspace, sandbox]
-  - id: modal-sandboxes
-    name: Modal Sandboxes
-    layer: runtimes
-    organization: Modal
-    url: https://modal.com/docs/guide/sandbox
-    open_source: false
-    tags: [sandbox, cloud]
-  - id: docker
-    name: Docker
-    layer: runtimes
-    organization: Docker
-    url: https://www.docker.com/
-    open_source: true
-    tags: [container, self-hosted]
-  - id: openhands
-    name: OpenHands
-    layer: runtimes
-    organization: All Hands AI
-    url: https://github.com/All-Hands-AI/OpenHands
-    open_source: true
-    tags: [coding, runtime]
+  - id: xai-grok-model
+    ecosystem: xai
+    stage: foundation-model
+    product: Grok
+    family: Grok 3 family
+    status: active
+    source: https://grok.com/
+    note: xAI model family.
+  - id: xai-grok
+    ecosystem: xai
+    stage: ai-assistant
+    product: Grok
+    status: active
+    source: https://grok.com/
+    note: Interactive AI assistant.
+  - id: xai-grok-build
+    ecosystem: xai
+    stage: developer-agent
+    product: Grok Build
+    status: tracking
+    source: null
+    note: Developer agent position tracked pending a stable primary source.
+  - id: xai-grok-bot
+    ecosystem: xai
+    stage: general-work-agent
+    product: Grok Bot
+    status: tracking
+    source: null
+    note: Autonomous work-agent position tracked pending a stable primary source.
 
-  - id: model-context-protocol
-    name: Model Context Protocol
-    layer: protocols
-    organization: Anthropic
-    url: https://modelcontextprotocol.io/
-    open_source: true
-    tags: [tools, context]
-  - id: agent2agent
-    name: Agent2Agent
-    layer: protocols
-    organization: Google
-    url: https://github.com/google/A2A
-    open_source: true
-    tags: [agent-to-agent, delegation]
-  - id: ag-ui
-    name: AG-UI
-    layer: protocols
-    organization: AG-UI Protocol
-    url: https://github.com/ag-ui-protocol/ag-ui
-    open_source: true
-    tags: [frontend, streaming]
-  - id: openapi
-    name: OpenAPI
-    layer: protocols
-    organization: OpenAPI Initiative
-    url: https://www.openapis.org/
-    open_source: true
-    tags: [api, tools]
-  - id: json-schema
-    name: JSON Schema
-    layer: protocols
-    organization: JSON Schema
-    url: https://json-schema.org/
-    open_source: true
-    tags: [structured-output, validation]
-
-  - id: langsmith
-    name: LangSmith
-    layer: evaluation
-    organization: LangChain
-    url: https://www.langchain.com/langsmith
-    open_source: false
-    tags: [tracing, evals]
-  - id: langfuse
-    name: Langfuse
-    layer: evaluation
-    organization: Langfuse
-    url: https://github.com/langfuse/langfuse
-    open_source: true
-    tags: [tracing, evals]
-  - id: arize-phoenix
-    name: Arize Phoenix
-    layer: evaluation
-    organization: Arize
-    url: https://github.com/Arize-ai/phoenix
-    open_source: true
-    tags: [tracing, evals]
-  - id: braintrust
-    name: Braintrust
-    layer: evaluation
-    organization: Braintrust
-    url: https://www.braintrust.dev/
-    open_source: false
-    tags: [evals, logging]
-  - id: weave
-    name: Weights & Biases Weave
-    layer: evaluation
-    organization: Weights & Biases
-    url: https://github.com/wandb/weave
-    open_source: true
-    tags: [tracing, experiments]
-  - id: mlflow
-    name: MLflow
-    layer: evaluation
-    organization: MLflow
-    url: https://github.com/mlflow/mlflow
-    open_source: true
-    tags: [experiments, lifecycle]
-  - id: ragas
-    name: Ragas
-    layer: evaluation
-    organization: Ragas
-    url: https://github.com/explodinggradients/ragas
-    open_source: true
-    tags: [rag, evals]
-  - id: deepeval
-    name: DeepEval
-    layer: evaluation
-    organization: Confident AI
-    url: https://github.com/confident-ai/deepeval
-    open_source: true
-    tags: [testing, evals]
-  - id: promptfoo
-    name: Promptfoo
-    layer: evaluation
-    organization: Promptfoo
-    url: https://github.com/promptfoo/promptfoo
-    open_source: true
-    tags: [testing, red-team]
-
-  - id: n8n
-    name: n8n
-    layer: visual-builders
-    organization: n8n
-    url: https://github.com/n8n-io/n8n
-    open_source: source-available
-    tags: [automation, visual]
-  - id: dify
-    name: Dify
-    layer: visual-builders
-    organization: LangGenius
-    url: https://github.com/langgenius/dify
-    open_source: true
-    tags: [workflows, applications]
-  - id: flowise
-    name: Flowise
-    layer: visual-builders
-    organization: FlowiseAI
-    url: https://github.com/FlowiseAI/Flowise
-    open_source: true
-    tags: [visual, workflows]
-  - id: langflow
-    name: Langflow
-    layer: visual-builders
-    organization: Langflow
-    url: https://github.com/langflow-ai/langflow
-    open_source: true
-    tags: [visual, workflows]
-  - id: copilot-studio
-    name: Microsoft Copilot Studio
-    layer: visual-builders
-    organization: Microsoft
-    url: https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio
-    open_source: false
-    tags: [enterprise, copilots]
-  - id: vertex-ai-agent-builder
-    name: Google Vertex AI Agent Builder
-    layer: visual-builders
-    organization: Google
-    url: https://cloud.google.com/products/agent-builder
-    open_source: false
-    tags: [google-cloud, enterprise]
-  - id: zapier-agents
-    name: Zapier Agents
-    layer: visual-builders
-    organization: Zapier
-    url: https://zapier.com/agents
-    open_source: false
-    tags: [automation, saas]
-
-  - id: swe-bench
-    name: SWE-bench
-    layer: benchmarks
-    organization: Princeton NLP
-    url: https://github.com/SWE-bench/SWE-bench
-    open_source: true
-    tags: [software-engineering, benchmark]
-  - id: gaia
-    name: GAIA
-    layer: benchmarks
-    organization: Hugging Face
-    url: https://huggingface.co/gaia-benchmark
-    open_source: true
-    tags: [general-assistant, benchmark]
-  - id: agentbench
-    name: AgentBench
-    layer: benchmarks
-    organization: THUDM
-    url: https://github.com/THUDM/AgentBench
-    open_source: true
-    tags: [benchmark, environments]
-  - id: webarena
-    name: WebArena
-    layer: benchmarks
-    organization: WebArena
-    url: https://github.com/web-arena-x/webarena
-    open_source: true
-    tags: [browser, benchmark]
-  - id: osworld
-    name: OSWorld
-    layer: benchmarks
-    organization: OSWorld
-    url: https://github.com/xlang-ai/OSWorld
-    open_source: true
-    tags: [computer-use, benchmark]
-  - id: browsecomp
-    name: BrowseComp
-    layer: benchmarks
-    organization: OpenAI
-    url: https://openai.com/index/browsecomp/
-    open_source: false
-    tags: [browsing, benchmark]
+  - id: oss-deepseek
+    ecosystem: open-source
+    stage: foundation-model
+    product: DeepSeek
+    family: DeepSeek R1 family
+    status: active
+    source: https://github.com/deepseek-ai/DeepSeek-R1
+    note: Open reasoning-model family.
+  - id: oss-open-webui
+    ecosystem: open-source
+    stage: ai-assistant
+    product: Open WebUI
+    status: active
+    source: https://github.com/open-webui/open-webui
+    note: Open-source AI interface.
+  - id: oss-openhands
+    ecosystem: open-source
+    stage: developer-agent
+    product: OpenHands
+    status: active
+    source: https://github.com/All-Hands-AI/OpenHands
+    note: Open-source developer agent.
+  - id: oss-openclaw
+    ecosystem: open-source
+    stage: general-work-agent
+    product: OpenClaw
+    status: tracking
+    source: https://github.com/openclaw/openclaw
+    note: Open-source general work agent.
