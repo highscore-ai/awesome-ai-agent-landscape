@@ -1,31 +1,29 @@
 ---
-name: Landscape addition or correction
-about: Add a durable agent project or correct an existing entry
-title: "[Landscape] "
+name: Agent-map update
+about: Add, correct, move, rename, or retire an entry in the four-stage agent map
+title: "[Map update] "
 labels: ""
 assignees: ""
 ---
 
-## Project
-
-- **Name:**
-- **Official URL:**
-- **Organization:**
-
 ## Placement
 
-- **Primary layer:** platform / coding harness / framework / runtime / protocol / evaluation / visual builder / benchmark
-- **Open-source status:** open source / source available / proprietary
-- **Why it belongs in the landscape:**
+- **Ecosystem:** OpenAI / Anthropic / Google / xAI / Open Source / other
+- **Stage:** foundation model / AI assistant / developer agent / general work agent
+- **Product:**
+- **Status:** active / tracking / renamed / retired / unverified
 
-## Change detail
+## Evidence
 
-- [ ] New entry
-- [ ] Existing entry correction
-- [ ] Project renamed, archived, or materially changed
+- **Official source:**
+- **What changed?**
+- **Why does this product belong in this stage?**
 
-**What should readers know?**
+## Proposed map change
 
-## Sources
+- [ ] Add a new position
+- [ ] Replace the current representative
+- [ ] Correct an existing entry
+- [ ] Mark a product renamed or retired
 
-Link official documentation or the official repository.
+Anything else maintainers should know?
