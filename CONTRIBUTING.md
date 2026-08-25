@@ -1,47 +1,43 @@
-# Contributing to Awesome AI Agent Landscape
+# Contributing to the AI Agent Evolving Map
 
-Thank you for helping keep this map useful.
+This repository tracks a specific product evolution:
 
-## What belongs here
+**Foundation Model → AI Assistant → Developer Agent → General Work Agent**
 
-Add a project only if it is a durable part of the AI agent stack:
+It is not a broad directory of agent frameworks or every new AI product.
 
-- a major model-provider or cloud-agent platform;
-- a coding agent, runtime, framework, protocol, evaluation tool, visual builder, or benchmark;
-- an open-source project with an active maintainer community and a primary source;
-- a product that materially changes how agents are built, run, connected, evaluated, or deployed.
+## A contribution belongs here when it changes the map
 
-## What does not belong here
+Please submit an update when a major ecosystem:
 
-Please do not submit:
+- launches or meaningfully upgrades a foundation-model family;
+- introduces an assistant with a distinct product role;
+- ships a developer agent that can work across code and tools;
+- ships a general work agent that can complete longer-running tasks or deliverables;
+- renames, retires, or materially changes one of the products already mapped.
 
-- prompt collections, paid courses, newsletters, or affiliate listings;
-- thin wrappers around another product with no clear technical distinction;
-- a funding announcement or a one-off demo;
-- duplicate entries with a different marketing name.
+## What to include
 
-## Submit an entry or correction
+Open an issue with:
 
-Open an issue and include:
+1. **Ecosystem** — OpenAI, Anthropic, Google, xAI, Open Source, or a proposed new ecosystem
+2. **Stage** — foundation model, AI assistant, developer agent, or general work agent
+3. **Product name** and **official source**
+4. **Status** — active, tracking, renamed, retired, or unverified
+5. **What changed** and why it moves or fills a position on the map
 
-1. **Name** and official URL
-2. **Primary layer** — platform, coding harness, framework, runtime, protocol, observability, visual builder, or benchmark
-3. **One-line reason** it belongs in the landscape
-4. **Open-source status** — open source, source available, or proprietary
-5. **What changed** — especially for an update to an existing entry
+Use official documentation, an official announcement, or the canonical project repository. Do not use a news summary as the only source.
 
-Use primary documentation or the official repository whenever possible.
+## Editorial rules
 
-## Editorial principles
+- The stage describes the product’s **main job**, not every capability it has.
+- One ecosystem can have one representative product per stage. If several candidates exist, explain why the position should change.
+- A product without a stable primary source is marked **tracking**, not presented as confirmed.
+- Do not submit generic frameworks, wrappers, prompt collections, or paid courses unless they become a representative product in the four-stage evolution.
+- Keep the one-line note factual and concise.
 
-- Entries are **mapped, not ranked**.
-- One product has one primary layer. Cross-layer notes are fine, duplicate listings are not.
-- Vendor-native platforms are described separately from third-party frameworks.
-- Open-source status must be precise. If in doubt, write “verify license.”
-- Keep descriptions factual, compact, and free of marketing claims.
+## Data source
 
-## Data changes
-
-The source catalogue is [data/landscape.yml](data/landscape.yml). Keep the same fields and use stable, official URLs. A README update should accompany any catalogue change so the public map stays readable.
+The source of truth is [data/landscape.yml](data/landscape.yml). Update it with the same commit as the public README and visual when you make a material change.
 
 By contributing, you agree that your contribution may be published under the repository’s AGPL-3.0 license.
