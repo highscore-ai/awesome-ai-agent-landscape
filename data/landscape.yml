@@ -52,8 +52,15 @@ entries:
     product: GPT
     family: GPT-5.6 family
     status: active
-    source: https://openai.com/
-    note: General intelligence model family.
+    page: wiki/openai/gpt.md
+    source: https://developers.openai.com/api/docs/models
+    official_sources:
+      - https://developers.openai.com/api/docs/models
+      - https://developers.openai.com/api/docs/pricing
+      - https://developers.openai.com/api/docs/guides/rate-limits
+    last_verified: 2026-08-25
+    availability: Separate usage-based OpenAI API account; GPT-5.6 family starts at API Tier 1.
+    note: General intelligence model family; page focuses on API access, pricing, and rate limits.
   - id: openai-chatgpt
     ecosystem: openai
     stage: ai-assistant
