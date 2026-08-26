@@ -104,84 +104,115 @@ entries:
     ecosystem: anthropic
     stage: foundation-model
     product: Claude
-    family: Claude 4 family
+    family: Claude 5 family
     status: active
-    source: https://www.anthropic.com/claude
-    note: Frontier model family.
+    page: wiki/anthropic/claude-model.md
+    source: https://docs.anthropic.com/en/docs/about-claude/models/overview
+    last_verified: 2026-08-25
+    availability: Separate Claude API account with spend-tier limits.
+    note: Claude foundation-model family; page focuses on API access, pricing, and spend caps.
   - id: anthropic-claude
     ecosystem: anthropic
     stage: ai-assistant
     product: Claude
     status: active
-    source: https://claude.ai/
-    note: Interactive AI assistant.
+    page: wiki/anthropic/claude.md
+    source: https://www.anthropic.com/team
+    last_verified: 2026-08-25
+    availability: Free, Pro, Max, Team, and Enterprise plans; API is separately billed.
+    note: Interactive AI assistant; page focuses on plan tiers and subscription/API boundary.
   - id: anthropic-claude-code
     ecosystem: anthropic
     stage: developer-agent
     product: Claude Code
     status: active
-    source: https://docs.anthropic.com/en/docs/claude-code/overview
-    note: Developer agent for codebases.
+    page: wiki/anthropic/claude-code.md
+    source: https://docs.anthropic.com/en/docs/claude-code/costs
+    last_verified: 2026-08-25
+    availability: Claude subscription plans and separate Claude API credits.
+    note: Developer agent for codebases; page focuses on allowance sharing and API-credit fallback.
   - id: anthropic-claude-cowork
     ecosystem: anthropic
     stage: general-work-agent
     product: Claude Cowork
     status: active
-    source: https://claude.ai/
-    note: General work agent for teams and projects.
-
+    page: wiki/anthropic/claude-cowork.md
+    source: https://www.anthropic.com/product/claude-cowork
+    last_verified: 2026-08-25
+    availability: Included with Pro, Max, Team, and Enterprise plans.
+    note: General work agent for teams and projects; page focuses on plan access and current beta surfaces.
   - id: google-gemini-model
     ecosystem: google
     stage: foundation-model
     product: Gemini
-    family: Gemini 2.5 family
+    family: Gemini 3 family
     status: active
-    source: https://gemini.google.com/
-    note: Google model family.
+    page: wiki/google/gemini-model.md
+    source: https://ai.google.dev/gemini-api/docs/models
+    last_verified: 2026-08-25
+    availability: Gemini Developer API with free and paid usage tiers.
+    note: Google model family; page focuses on API access, billing tiers, and rate limits.
   - id: google-gemini-search
     ecosystem: google
     stage: ai-assistant
     product: Gemini + Search
     status: active
-    source: https://gemini.google.com/
-    note: AI assistant with real-time search.
+    page: wiki/google/gemini-search.md
+    source: https://gemini.google/
+    last_verified: 2026-08-25
+    availability: Gemini Free, Google AI Plus, Pro, and Ultra subscriptions.
+    note: AI assistant with real-time search; page focuses on consumer plans and usage multipliers.
   - id: google-antigravity
     ecosystem: google
     stage: developer-agent
     product: Antigravity
-    status: tracking
-    source: null
-    note: Developer agent platform tracked pending a stable primary source.
+    status: active
+    page: wiki/google/antigravity.md
+    source: https://antigravity.google/
+    last_verified: 2026-08-25
+    availability: Free individual access, Google AI plans, and eligible Gemini Enterprise subscriptions.
+    note: Agentic development platform; page focuses on current plans, model access, and desktop availability.
   - id: google-gemini-spark
     ecosystem: google
     stage: general-work-agent
     product: Gemini Spark
-    status: tracking
-    source: null
-    note: General work agent position tracked pending a stable primary source.
-
+    status: active
+    page: wiki/google/gemini-spark.md
+    source: https://blog.google/intl/en-ca/products/explore-get-answers/introducing-gemini-spark-your-247-personal-ai-agent-in-canada/
+    last_verified: 2026-08-25
+    availability: Current English rollout for Google AI Pro and Ultra subscribers, varying by country.
+    note: General work agent; page focuses on subscription eligibility and rollout availability.
   - id: xai-grok-model
     ecosystem: xai
     stage: foundation-model
     product: Grok
-    family: Grok 3 family
+    family: Grok 4.6 family
     status: active
-    source: https://grok.com/
-    note: xAI model family.
+    page: wiki/xai/grok-model.md
+    source: https://docs.x.ai/developers/models
+    last_verified: 2026-08-25
+    availability: xAI API with usage-based token billing.
+    note: xAI model family; page focuses on API model prices and context limits.
   - id: xai-grok
     ecosystem: xai
     stage: ai-assistant
     product: Grok
     status: active
+    page: wiki/xai/grok.md
     source: https://grok.com/
-    note: Interactive AI assistant.
+    last_verified: 2026-08-25
+    availability: Free and paid Grok plans; weekly paid-feature allowance.
+    note: Interactive AI assistant; page focuses on weekly usage and top-up behavior.
   - id: xai-grok-build
     ecosystem: xai
     stage: developer-agent
     product: Grok Build
-    status: tracking
-    source: null
-    note: Developer agent position tracked pending a stable primary source.
+    status: active
+    page: wiki/xai/grok-build.md
+    source: https://x.ai/build
+    last_verified: 2026-08-25
+    availability: Free trial, Grok subscription, xAI API key, and enterprise deployment.
+    note: Developer agent for complex builds; page focuses on access modes and token billing.
   - id: xai-grok-bot
     ecosystem: xai
     stage: general-work-agent
@@ -203,26 +234,38 @@ entries:
     product: DeepSeek
     family: DeepSeek R1 family
     status: active
+    page: wiki/open-source/deepseek.md
     source: https://github.com/deepseek-ai/DeepSeek-R1
-    note: Open reasoning-model family.
+    last_verified: 2026-08-25
+    availability: Open weights plus separate DeepSeek API token billing.
+    note: Open reasoning-model family; page focuses on self-hosted versus API access.
   - id: oss-open-webui
     ecosystem: open-source
     stage: ai-assistant
     product: Open WebUI
     status: active
-    source: https://github.com/open-webui/open-webui
-    note: Open-source AI interface.
+    page: wiki/open-source/open-webui.md
+    source: https://openwebui.com/
+    last_verified: 2026-08-25
+    availability: Free self-hosted deployment; optional enterprise licenses and external model costs.
+    note: Self-hosted AI interface; current source code is public but current license is not OSI-approved.
   - id: oss-openhands
     ecosystem: open-source
     stage: developer-agent
     product: OpenHands
     status: active
-    source: https://github.com/All-Hands-AI/OpenHands
-    note: Open-source developer agent.
+    page: wiki/open-source/openhands.md
+    source: https://www.openhands.dev/
+    last_verified: 2026-08-25
+    availability: Free local open-source agent, hosted cloud, and self-hosted cloud options.
+    note: Open-source developer agent; page distinguishes local agent from licensed Cloud.
   - id: oss-openclaw
     ecosystem: open-source
     stage: general-work-agent
     product: OpenClaw
-    status: tracking
-    source: https://github.com/openclaw/openclaw
-    note: Open-source general work agent.
+    status: active
+    page: wiki/open-source/openclaw.md
+    source: https://openclaw.ai/
+    last_verified: 2026-08-25
+    availability: Free self-hosted software; user-selected model and hosting costs.
+    note: Self-hosted general work agent for a single operator.
