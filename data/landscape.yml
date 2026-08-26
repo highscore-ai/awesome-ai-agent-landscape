@@ -162,9 +162,16 @@ entries:
     ecosystem: xai
     stage: general-work-agent
     product: Grok Bot
-    status: tracking
-    source: null
-    note: Autonomous work-agent position tracked pending a stable primary source.
+    status: active
+    page: wiki/xai/grok-bot.md
+    source: https://x.ai/bot
+    official_sources:
+      - https://x.ai/bot
+      - https://x.ai/news/introducing-grok-bot
+      - https://x.ai/bot/use-cases
+    last_verified: 2026-08-25
+    availability: Early beta; initial macOS Apple silicon and iOS availability.
+    note: Autonomous general work agent with its own computer, tool access, routines, and 24/7 execution.
 
   - id: oss-deepseek
     ecosystem: open-source
