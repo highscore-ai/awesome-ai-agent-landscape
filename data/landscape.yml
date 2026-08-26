@@ -66,8 +66,14 @@ entries:
     stage: ai-assistant
     product: ChatGPT
     status: active
+    page: wiki/openai/chatgpt.md
     source: https://chatgpt.com/
-    note: Interactive AI assistant.
+    official_sources:
+      - https://chatgpt.com/
+      - https://learn.chatgpt.com/docs/pricing
+    last_verified: 2026-08-25
+    availability: ChatGPT Free, Go, Plus, Pro, Business, Edu, and Enterprise plans; API is separately billed.
+    note: Interactive AI assistant; page focuses on plans, access boundaries, and Work/Codex relationship.
   - id: openai-codex
     ecosystem: openai
     stage: developer-agent
@@ -85,8 +91,14 @@ entries:
     stage: general-work-agent
     product: ChatGPT Work
     status: active
-    source: https://chatgpt.com/
-    note: General work agent for longer tasks and deliverables.
+    page: wiki/openai/chatgpt-work.md
+    source: https://chatgpt.com/overview/
+    official_sources:
+      - https://chatgpt.com/overview/
+      - https://learn.chatgpt.com/docs/pricing
+    last_verified: 2026-08-25
+    availability: Included with ChatGPT Free, Go, Plus, Pro, Business, Edu, and Enterprise plans; shares usage with Codex.
+    note: General work agent for longer tasks and deliverables; page focuses on access, model ranges, and credits.
 
   - id: anthropic-claude-model
     ecosystem: anthropic
